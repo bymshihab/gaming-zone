@@ -1,0 +1,220 @@
+/* common CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+.logo {
+  width: 80px;
+}
+
+:root {
+  --PrimaryColor: #3c354f;
+  --secondaryColor: #ff42a5;
+}
+
+/* buttton desgn */
+
+.btn-primary {
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: var(--secondaryColor);
+  color: #fff;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+  border: 0px;
+}
+
+.btn-secondary {
+  padding: 21px 40px;
+  border-radius: 48px;
+  background: #4ec5f7;
+  color: #fff;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+  border: 0px;
+}
+
+.sub-heading {
+  color: #0b0223;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.captionText {
+  color: #534c64;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* nav design */
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 130px;
+
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.nav-title > span {
+  color: var(--secondaryColor);
+}
+
+.nav-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #0b0223;
+}
+
+.gaming-img-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.others-pages {
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-links ul {
+  display: flex;
+  gap: 32px;
+}
+
+.site-links ul > li {
+  list-style: none;
+  /* color: var(--PrimaryColor); */
+  color: #3c354f;
+}
+
+.site-links ul > li > a {
+  text-decoration: none;
+}
+
+.social-media-links {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  width: 262px;
+  height: 56px;
+}
+
+.social-media-links img {
+  width: 1.5rem;
+}
+
+/* Header Banner */
+
+.header-banner {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px; /* Adjust the maximum width as desired */
+  height: 700px;
+  border: 2px solid green;
+}
+
+.baneer-text {
+  background-image: url("./images/Group14.png");
+  width: 100%;
+  height: 100%;
+  fill: linear-gradient(
+    223deg,
+    rgba(140, 87, 238, 0.03) 0%,
+    rgba(241, 68, 174, 0.03) 100%
+  );
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+.baneer-text h2 {
+  color: #0b0223;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.baneer-text h1 {
+  text-align: center;
+  font-size: 95px;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.baneer-text p {
+  text-align: left;
+  margin-top: 12px;
+  margin-bottom: 30px;
+  margin-left: 280px;
+}
+
+.btn-div {
+  margin-left: 300px;
+}
+
+.banner-img {
+  width: 100px; /* Adjust the width as desired */
+  height: auto;
+  border: 2px solid red;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.Online-game-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.funny-games {
+  display: inline-block;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  /* text-transform: uppercase; */
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 5px;
+}
+
+.online-games-p {
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+}
+
+.card-1 {
+  background-image: url("./images/Rectangle4.png");
+  width: 342px;
+  height: 400px;
+
+  border-radius: 16px;
+}
