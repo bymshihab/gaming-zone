@@ -46,14 +46,10 @@
 
 .sub-heading {
   color: #0b0223;
+  text-align: center;
   font-size: 48px;
-  font-weight: 700;
-}
-
-.captionText {
-  color: #534c64;
-  font-size: 18px;
-  font-weight: 400;
+  font-style: normal;
+  font-weight: 600;
 }
 
 /* nav design */
@@ -118,103 +114,84 @@ nav {
   width: 1.5rem;
 }
 
-/* Header Banner */
+/*  headidng banner */
 
-.header-banner {
+.banner-section {
   display: flex;
-  justify-content: space-between;
-  max-width: 900px; /* Adjust the maximum width as desired */
   height: 700px;
-  border: 2px solid green;
+  max-width: calc(100%-240px);
+  margin-right: 240px;
+  gap: 68px;
 }
 
-.baneer-text {
+.text-part {
   background-image: url("./images/Group14.png");
-  width: 100%;
-  height: 100%;
   fill: linear-gradient(
     223deg,
     rgba(140, 87, 238, 0.03) 0%,
     rgba(241, 68, 174, 0.03) 100%
   );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+  border: 1px solid red;
+  width: 50%;
+}
+
+/* .only-text {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-flow: column;
+  align-items: center;
+  border: 1px solid rgb(53, 6, 6);
+} */
+
+.content-text {
+  border: 1px solid black;
+  margin-top: 150px;
+  margin-left: 30px;
 }
 
-.baneer-text h2 {
-  color: #0b0223;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 600;
-  text-transform: uppercase;
+.image-part {
+  /* margin-right: 111px;
+  width: 100px;
+  border: 1px solid red; */
+
+  border: 1px solid rgb(41, 36, 99);
+  width: 50%;
 }
 
-.baneer-text h1 {
+.heading {
   text-align: center;
+
   font-size: 95px;
+
   font-weight: 800;
+
   text-transform: uppercase;
+
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 5px;
 }
 
-.baneer-text p {
+.para {
+  color: #534c64;
   text-align: left;
-  margin-top: 12px;
-  margin-bottom: 30px;
-  margin-left: 280px;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+  margin-left: 70px;
+  padding-top: 10px;
 }
 
-.btn-div {
-  margin-left: 300px;
-}
-
-.banner-img {
-  width: 100px; /* Adjust the width as desired */
-  height: auto;
-  border: 2px solid red;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-
-.Online-game-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-
-.funny-games {
-  display: inline-block;
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
-  /* text-transform: uppercase; */
-  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 5px;
-}
-
-.online-games-p {
-  /* border: 1px solid red; */
-  text-align: center;
-}
-
-.card-section {
-  display: flex;
-  justify-content: center;
-}
-
-.card-1 {
-  background-image: url("./images/Rectangle4.png");
-  width: 342px;
-  height: 400px;
-
-  border-radius: 16px;
+.banner-btn {
+  margin-left: 55px;
+  margin-top: 50px;
 }
