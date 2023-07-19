@@ -58,7 +58,7 @@
 
 .sub-heading {
   color: #0b0223;
-  text-align: center;
+  /* text-align: center; */
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -136,6 +136,10 @@ nav {
   gap: 68px;
 }
 
+.banner-heading {
+  text-align: center;
+}
+
 .text-part {
   background-image: url("./images/Group14.png");
   fill: linear-gradient(
@@ -204,6 +208,10 @@ nav {
   margin-top: 100px;
 }
 
+.game-heading {
+  text-align: center;
+}
+
 .gamming-para-text {
   text-align: center;
   margin-top: 5px;
@@ -267,4 +275,97 @@ nav {
   margin: 10px;
   text-align: left;
   margin: 20px;
+}
+
+/* play-instantly section */
+
+.play-instantly-text {
+  border: 1px solid rebeccapurple;
+}
+.play-instantly {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.instantly-text-heading {
+  color: var(--secondaryColor);
+}
+
+.instantly-text-p {
+  text-align: right;
+}
+
+.play-instantly-img {
+  position: relative;
+}
+
+.small-img {
+  position: relative;
+  border-radius: 8px;
+  margin-top: -304px;
+  margin-left: -48px;
+}
+
+.instantly-p {
+  text-align: end;
+}
+
+/* game box design  */
+
+.game-box-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  height: 427px;
+  margin-top: 120px;
+  /* display: flex;
+  justify-content: center; */
+}
+.game-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+
+.box-1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 16px;
+  width: 243px;
+  height: 80px;
+  border-radius: 50px;
+  background: #fff;
+  color: #0b0223;
+  border: 1px solid black;
+}
+
+.box-p {
+  color: #0b0223;
+
+  font-size: 20px;
+
+  font-weight: 600;
+}
+
+/* footer-section */
+.footer-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 636px;
+  background: #0b0223;
+  flex-direction: column;
+}
+
+.copywright > p {
+  color: #fff;
 }
