@@ -44,6 +44,18 @@
   border: 0px;
 }
 
+.para {
+  color: #534c64;
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  text-transform: lowercase;
+  margin-left: 70px;
+  padding-top: 10px;
+}
+
 .sub-heading {
   color: #0b0223;
   text-align: center;
@@ -136,7 +148,7 @@ nav {
   background-size: cover;
   position: relative;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 50%;
 }
 
@@ -149,7 +161,7 @@ nav {
 } */
 
 .content-text {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 150px;
   margin-left: 30px;
 }
@@ -159,7 +171,7 @@ nav {
   width: 100px;
   border: 1px solid red; */
 
-  border: 1px solid rgb(41, 36, 99);
+  /* border: 1px solid rgb(41, 36, 99); */
   width: 50%;
 }
 
@@ -178,20 +190,81 @@ nav {
   -webkit-text-fill-color: transparent;
 }
 
-.para {
-  color: #534c64;
+.banner-para {
   text-align: left;
-  font-family: Work Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: lowercase;
-  margin-left: 70px;
-  padding-top: 10px;
 }
-
 .banner-btn {
   margin-left: 55px;
   margin-top: 50px;
+}
+
+/* gaming-section */
+
+.gaming-section {
+  margin-top: 100px;
+}
+
+.gamming-para-text {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.game-span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  /* margin: px; */
+}
+
+.pic-1 {
+  position: relative;
+  background-image: url("./images/Rectangle4.png");
+  width: 250px;
+  height: 250px;
+  padding-bottom: calc(250px / 250px * 100%); /* Maintain aspect ratio */
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.pic-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.pic-1:hover::before {
+  opacity: 1;
+}
+
+.caption-section {
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  align-items: left;
+  justify-content: center;
+}
+
+.pic-caption {
+  margin: 10px;
+  text-align: left;
+  margin: 20px;
 }
