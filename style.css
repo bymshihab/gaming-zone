@@ -246,6 +246,45 @@ nav {
   background-size: cover;
   overflow: hidden;
 }
+.pic-2 {
+  position: relative;
+  background-image: url("./images/Rectangle5.png");
+  width: 250px;
+  height: 250px;
+  padding-bottom: calc(250px / 250px * 100%); /* Maintain aspect ratio */
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background-size: cover;
+  overflow: hidden;
+}
+.pic-3 {
+  position: relative;
+  background-image: url("./images/Rectangle6.png");
+  width: 250px;
+  height: 250px;
+  padding-bottom: calc(250px / 250px * 100%); /* Maintain aspect ratio */
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background-size: cover;
+  overflow: hidden;
+}
+.pic-4 {
+  position: relative;
+  background-image: url("./images/Rectangle7.png");
+  width: 250px;
+  height: 250px;
+  padding-bottom: calc(250px / 250px * 100%); /* Maintain aspect ratio */
+  border-radius: 16px;
+
+  margin-bottom: 20px;
+  margin-top: 30px;
+  background-size: cover;
+  overflow: hidden;
+}
 
 .pic-1::before {
   content: "";
@@ -280,7 +319,7 @@ nav {
 /* play-instantly section */
 
 .play-instantly-text {
-  border: 1px solid rebeccapurple;
+  /* border: 1px solid rebeccapurple; */
 }
 .play-instantly {
   margin-top: 80px;
@@ -344,16 +383,21 @@ nav {
   height: 80px;
   border-radius: 50px;
   background: #fff;
-  color: #0b0223;
-  border: 1px solid black;
 }
 
 .box-p {
   color: #0b0223;
-
-  font-size: 20px;
-
+  font-size: 15px;
   font-weight: 600;
+}
+.box-1:hover {
+  border: 2px solid var(--secondaryColor);
+  color: var(--secondaryColor);
+}
+
+.box-1:hover .box-p {
+  border: none;
+  color: var(--secondaryColor);
 }
 
 /* footer-section */
@@ -367,5 +411,177 @@ nav {
 }
 
 .copywright > p {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 28px;
+}
+
+.foot-title {
+  text-align: center;
+  font-size: 45px;
+  font-weight: 700;
+  color: #ffff;
+}
+
+.gaming-img-foot {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.gamer-foot {
+  color: var(--secondaryColor);
+}
+
+.foot-tag ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+  color: white;
+}
+.foot-tag ul > li {
+  /* display: flex; */
+  color: white;
+  list-style: none;
+}
+.foot-tag ul > li > a {
+  /* display: flex; */
+  color: white;
+  /* list-style: none; */
+  text-decoration: none;
+}
+
+.termsCon-foot ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 60px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+.termsCon-foot ul > li {
+  list-style: none;
+  justify-content: space-evenly;
+  gap: 60px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+}
+.termsCon-foot ul > li > a {
+  text-decoration: none;
+  gap: 60px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  margin-bottom: 28px;
+}
+
+.logo-foot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 70px;
+  margin-top: 50px;
+}
+
+.logo-foot img {
+  width: 50px;
+}
+
+/* Styles for mobile devices */
+@media screen and (max-width: 576px) {
+  body {
+    /* max-width: 550px; */
+  }
+  header {
+    border: 1px solid blue;
+    /* width: 575px; */
+  }
+  nav {
+    flex-direction: column;
+    /* width: 700px; */
+    border: 1px solid red;
+    margin-top: 103px;
+    background: none;
+    box-shadow: none;
+  }
+
+  .others-pages {
+    flex-direction: column;
+  }
+  .site-links ul {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .banner-section {
+    flex-direction: column-reverse;
+    /* width: 300%; */
+    margin-top: 614px;
+  }
+  .banner-img {
+    width: 500px;
+    border: 1px solid black;
+    margin-top: -189px;
+    position: absolute;
+  }
+
+  .banner-para {
+    margin-left: 161px;
+  }
+  .banner-btn {
+    margin-left: 116px;
+  }
+  .gaming-section {
+    /* width: 700px; */
+  }
+
+  .game-heading {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .gamming-para-text {
+    text-align: center;
+    /* margin-top: 5px; */
+    font-size: 0.8rem;
+  }
+
+  .card-section {
+    flex-direction: column;
+  }
+
+  .play-instantly {
+    flex-direction: column-reverse;
+  }
+  .instantly-text-p {
+    text-align: center;
+  }
+  .instantly-p {
+    text-align: center;
+  }
+
+  .play-instantly-img {
+    width: 300px;
+  }
+
+  .big-img {
+    width: 367px;
+    margin-left: 50px;
+  }
+
+  .small-img {
+    position: relative;
+    /* border-radius: 8px; */
+    margin-bottom: -16px;
+    margin-left: -6px;
+    width: 164px;
+  }
+
+  .game-box {
+    width: 500px;
+  }
+
+  .instantly-p {
+    text-align: center;
+    font-size: 1.5rem;
+    white-space: pre-line;
+  }
 }
